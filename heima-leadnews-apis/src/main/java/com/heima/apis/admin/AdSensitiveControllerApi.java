@@ -1,0 +1,36 @@
+package com.heima.apis.admin;
+
+import com.heima.model.admin.dtos.SensitiveDto;
+import com.heima.model.admin.pojos.AdSensitive;
+import com.heima.model.common.dtos.ResponseResult;
+
+public interface AdSensitiveControllerApi {
+
+    /**
+     * 敏感词按照名称模糊分页查询
+     * @param dto
+     * @return
+     */
+    public ResponseResult list(SensitiveDto dto);
+
+    /**
+     * 新增
+     * @param adSensitive
+     * @return
+     */
+    public ResponseResult insert(AdSensitive adSensitive);
+
+    /**
+     * 修改
+     * @param adSensitive
+     * @return
+     */
+    public ResponseResult update(AdSensitive adSensitive);
+
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
+    public ResponseResult delete(Integer id);
+}
